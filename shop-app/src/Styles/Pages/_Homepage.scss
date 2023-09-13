@@ -1,0 +1,13 @@
+.homepage {
+  .listproducts__title {
+    @include textExtraBold($black, 30px);
+    margin-bottom: 40px;
+  }
+}
+
+.listproducts__wrap {
+  @include flexRow();
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}

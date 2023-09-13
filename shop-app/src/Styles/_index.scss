@@ -1,0 +1,65 @@
+@import "./variables";
+@import "./mixin";
+@import "./Components/Header";
+@import "./Pages/_Homepage";
+@import "./Components/Footer";
+@import "./Components/Slider";
+@import "./Components/Card";
+@import "./Components/Modal";
+@import "./Pages/Productdetail";
+@import "./Pages/Cartpage";
+@import "./Components/Cart";
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-shopapp {
+  padding-inline: 27px;
+}
+
+.wrap-page {
+  height: 100vh;
+  @include flexColumn();
+  justify-content: space-between;
+}
